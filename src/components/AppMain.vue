@@ -42,6 +42,18 @@ export default{
     <ul class="grid grid-cols-3 gap-4">
       <li class="border p-4 shadow-lg rounded-lg" v-for="work in works" :key="work.id">
         <h2 class="text-lg text-green-400 font-medium">{{ work.title }}</h2>
+
+        <p v-if="work.type" class="text-gray-600">
+          Type of Work: {{ work.type.name }}
+        </p>
+
+        <ul class="flex flex-wrap gap-2 mt-2">
+          Technologies used: <br>
+          <li class="rounded-full bg-gray-200 px-3 leading-6" v-for="tech in work.technologies" :key="tech.id">
+            
+            {{ tech.name }}
+          </li>
+        </ul>
       </li>
     </ul>
   </div>
