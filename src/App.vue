@@ -4,7 +4,7 @@
   export default{
   data(){
     return{
-      message: 'Ciao Mondo!',
+      // message: 'Ciao Mondo!',
     }
   },
   methods:{
@@ -21,7 +21,7 @@
 </script>
 
 <template>
-  <h1>{{ message }}</h1>
+  <!-- <h1>{{ message }}</h1> -->
   <AppMain />
 
 </template>
