@@ -37,7 +37,6 @@ export default{
   <!-- <h2>AppMain</h2> -->
 
   <div class="container">
-    <h2 class="text-2xl my-8">These are my Projects</h2>
 
     <ul class="grid grid-cols-3 gap-4">
       <li class="border p-4 shadow-lg rounded-lg" v-for="work in works" :key="work.id">

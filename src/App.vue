@@ -1,5 +1,5 @@
 <script>
-  import AppMain from './components/AppMain.vue';
+  import AppNavbar from './components/AppNavbar.vue';
 
   export default{
   data(){
@@ -14,15 +14,15 @@
     
   },
   components:{
-    AppMain
+    AppNavbar
   }
 }
 
 </script>
 
 <template>
-  <!-- <h1>{{ message }}</h1> -->
-  <AppMain />
+  <AppNavbar />  <!-- <AppMain /> -->
+   <router-view></router-view>
 
 </template>
 
