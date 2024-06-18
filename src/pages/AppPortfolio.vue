@@ -16,8 +16,14 @@ export default{
       axios.get('http://127.0.0.1:8000/api/works')
 
       .then((res)=>{
-        console.log(res.data.results.data);
-        this.works = res.data.results.data;
+        if(res.data.seccess){
+          console.log(res.data.results.data);
+          this.works = res.data.results.data;
+        }else{
+          this.$router.replace({
+            name: 'not-found'
+          })
+        }
       })
 
     }

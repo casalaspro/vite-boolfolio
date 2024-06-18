@@ -28,7 +28,8 @@
 
 <style lang="scss">
 
-// @use './style.css';
+@use './style/general.scss';
+
 
 
 </style>

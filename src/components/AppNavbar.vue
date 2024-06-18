@@ -4,7 +4,20 @@
 export default{
   data(){
     return{
-
+      menu:[
+        {
+          routeName: 'home',
+          text: 'Home'
+        },
+        {
+          routeName: 'portfolio',
+          text: 'Portfolio'
+        },
+        {
+          routeName: 'contact',
+          text: 'Contact Us'
+        }
+      ]
     }
   },
   methods:{
