@@ -1,5 +1,6 @@
 <script>
   import AppNavbar from './components/AppNavbar.vue';
+  
 
   export default{
   data(){
@@ -21,15 +22,26 @@
 </script>
 
 <template>
-  <AppNavbar />  <!-- <AppMain /> -->
-   <router-view></router-view>
+  <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <!-- <script type="module" src="./js/main.js"></script> -->
+  </head>
+  <body>
+
+    <AppNavbar />  <!-- <AppMain /> -->
+    <router-view></router-view>
+
+  </body>
+</html>
+  
+
 
 </template>
 
 <style lang="scss">
-
-@use 'style/general.scss';
-
-
-
+  @use 'style/general.scss';
 </style>
